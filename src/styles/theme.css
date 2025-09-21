@@ -1,4 +1,3 @@
-
 @theme {
     --color-cyan: #00E5FF;
     /* QUANTUM */
@@ -13,6 +12,8 @@
     --color-panel: #131317;
     --color-explore: #1c1524;
 }
+
+
 
 @theme {
 
@@ -30,3 +31,4 @@
 
 
 }
+

@@ -6,3 +6,45 @@
 
 /* Global styles (SCSS) */
 @import "./global.scss";
+
+
+
+/* your wave shapes — unchanged except pointer-events already set on container */
+.wave {
+    position: absolute;
+    left: -10%;
+    width: 120%;
+    height: 55%;
+    filter: blur(20px);
+    opacity: .55;
+    background: var(--grad);
+    transform: translateY(0) rotate(0deg);
+    animation: waveFloat 1s ease-in-out infinite alternate;
+}
+
+.wave.two {
+    top: 30%;
+    height: 60%;
+    opacity: .35;
+    animation-duration: 18s;
+    animation-delay: .2s;
+}
+
+.wave.three {
+    top: 60%;
+    height: 55%;
+    opacity: .25;
+    animation-duration: 22s;
+    animation-delay: .6s;
+}
+
+@keyframes waveFloat {
+    to {
+        transform: translateY(-18px) rotate(-1.5deg);
+    }
+}
+
+/* optional: reduce pointer capture so UI beneath is clickable (container already has pointer-events-none) */
+.bg-waves {
+    pointer-events: none;
+}

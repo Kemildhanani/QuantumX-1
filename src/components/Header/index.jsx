@@ -24,7 +24,7 @@ const Header = () => {
           <button className="bg-explore border border-border h-[45px] px-4 rounded-[25px]  cursor-pointer hover:-translate-y-1 transition  ">
             Explore
           </button>
-          <button className="bg-grad   h-[45px] px-4 rounded-[25px]  cursor-pointer animate-pulse ">
+          <button className="bg-grad   h-[45px] px-4 rounded-[25px]  cursor-pointer hover:-translate-y-1 transition ">
             Start Now
           </button>
         </div>

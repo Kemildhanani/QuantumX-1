@@ -1,12 +1,20 @@
 export default function Hero() {
   return (
-    <section className="relative py-24">
-      {/* Waves */}
-      <div className="absolute inset-0 -z-10">
-        <span className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-30 blur-3xl"></span>
+    <section className="relative py-24 bg-grad-soft">
+      {/* Waves (behind everything) */}
+      <div className="absolute animate-pulse inset-0 z-20 pointer-events-none bg-waves">
+        <span className="wave one" />
+        <span className="wave two" />
+        <span className="wave three" />
       </div>
 
-      <div className="container mx-auto grid md:grid-cols-2 gap-12 px-4">
+      {/* Gradient backdrop (still behind content) */}
+      <div className="absolute inset-0 -z-10">
+        <span className="absolute inset-x-0 top-0 h-1/2 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 opacity-30 blur-3xl" />
+      </div>
+
+      {/* Content: positioned and above waves/gradient */}
+      <div className="container relative z-20 mx-auto grid md:grid-cols-2 gap-12 px-4 ">
         <div>
           <div className="inline-flex items-center px-3 py-1 rounded-full text-sm border border-cyan-400/30 bg-cyan-400/10 mb-4">
             ⚛︎ AI • Cloud • Digital Transformation
@@ -37,7 +45,6 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Code Panel */}
         <div className="bg-[#131317] rounded-2xl border border-white/10 shadow-lg overflow-hidden">
           <pre className="p-6 text-sm font-mono text-cyan-100">
 {`// QuantumX: event → features → prediction → action
@@ -50,7 +57,7 @@ await pipeline.run(async (evt) => {
 });
 
 QX.observe(pipeline).dashboard({SLO:"<45ms", uptime:"99.99%"});`}
-            <span className="inline-block w-2 h-5 bg-cyan-100 animate-pulse ml-1"></span>
+            <span className="inline-block w-2 h-5 bg-cyan-100 animate-pulse ml-1" />
           </pre>
         </div>
       </div>
