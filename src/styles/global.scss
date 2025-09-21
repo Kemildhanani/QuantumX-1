@@ -4,3 +4,28 @@
 .bg-grad-soft{
     background: var(--grad-soft);
 }
+
+.global-scroll-dark {
+  &::-webkit-scrollbar {
+    background-color: $color07;
+    width: 5px;
+    height: 5px;
+    border-radius: 20px;
+  }
+
+  /* background of the scrollbar except button or resizer */
+  &::-webkit-scrollbar-track {
+    background-color: #464545;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  /* scrollbar itself */
+  &::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 15px;
+    border: 0px solid $color07;
+  }
+
+
+}

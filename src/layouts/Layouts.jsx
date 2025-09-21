@@ -4,7 +4,9 @@ import Footer from "../components/Footer";
 
 const Layouts = ({ children }) => {
   return (
-    <div className={`h-[100vh] w-full bg-bg container`}>
+    <div
+      className={`h-[100vh] overflow-auto w-full global-scroll-dark  bg-bg `}
+    >
       <Header />
       {children}
       <Footer />
