@@ -1,0 +1,8 @@
+/* Tailwind core */
+@import "tailwindcss";
+
+/* Theme variables */
+@import "./theme.css";
+
+/* Global styles (SCSS) */
+@import "./global.scss";

@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@import "./styles/index.css";
+
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -11,32 +12,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+
 }
 
-@theme {
-  --color-cyan: oklch(0.8442 0.145654 209.2851);
-  --color-blue: oklch(0.6048 0.2166 257.21);
-  --color-purple: oklch(0.5338 0.2503 301.37);
-  --color-magenta: oklch(0.7017 0.3225 328.36);
-  --color-bg: oklch(0.1591 0 0);
-  --color-text: oklch(0.9688 0.0175 234.49);
-  --color-muted: oklch(0.7531 0.0282 237.72);
-  --color-panel: oklch(0.1886 0.008 285.6);
-  --grad: linear-gradient(135deg,
-  var(--color-cyan),
-  var(--color-blue),
-  var(--color-purple),
-  var(--color-magenta));
-  --grad-soft: linear-gradient(135deg,
-  rgba(0, 229, 255, 0.25),
-  rgba(0, 123, 255, 0.2),
-  rgba(138, 43, 226, 0.2),
-  rgba(255, 0, 255, 0.18));
- --color-border: oklch(1 0 0 / 0.06);
 
-  
-}
 
 body {
   margin: 0;

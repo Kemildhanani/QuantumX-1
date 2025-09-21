@@ -9,7 +9,7 @@ import Contact from "../components/Contact";
 const Home = () => {
   useEffect(() => {}, []);
   return (
-    <div className="bg-primary">
+    <div className="">
       <main>
         <Hero />
         <About />
