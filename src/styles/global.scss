@@ -6,7 +6,10 @@
 }
 
 .global-scroll-dark {
-  &::-webkit-scrollbar {
+  
+}
+
+&::-webkit-scrollbar {
     background-color: $color07;
     width: 5px;
     height: 5px;
@@ -26,5 +29,3 @@
     border-radius: 15px;
     border: 0px solid $color07;
   }
-}
-
