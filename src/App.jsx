@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-
 import Layouts from "./layouts/Layouts";
 import RouteName from "./util/RouteName";
 import About from "./pages/About";
@@ -18,14 +17,6 @@ function App() {
             {/* <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} /> */}
-
-            {/* 404 Page */}
-            {/* <Route
-            path="*"
-            element={
-              <h1 className="text-center mt-20">404 - Page Not Found</h1>
-              }
-              /> */}
           </Routes>
         </Layouts>
       </Router>
