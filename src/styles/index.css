@@ -8,7 +8,7 @@
 
 /* Global styles (SCSS) */
 @import "./global.scss";
-@import "tw-animate-css";
+/* @import "tw-animate-css"; */
 
 @custom-variant dark (&:is(.dark *));
 
