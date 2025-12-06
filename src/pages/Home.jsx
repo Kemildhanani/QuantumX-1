@@ -14,7 +14,7 @@ const Home = () => {
       <DarkVeil />
 
       {/* Content */}
-      <div className="absolute z-10">
+      <div className=" z-10">
         <About />
         <Solutions />
         <Showcase />

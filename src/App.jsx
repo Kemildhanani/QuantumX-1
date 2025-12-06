@@ -12,7 +12,7 @@ function App() {
           <Routes>
             {/* Home */}
             <Route path={RouteName.HOME} element={<Home />} />
-            <Route path={RouteName.ABOUT} element={<About />} />
+            {/* <Route path={RouteName.ABOUT} element={<About />} /> */}
             {/* Other Pages */}
             {/* <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
